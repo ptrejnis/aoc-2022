@@ -15,6 +15,6 @@ const pointsMap = new Map([
   ['AZ', 3],
 ]);
 const points = input.split(CHUNK_SEPARATOR).map((v) => fromMap(pointsMap, v.split(' ').join('')));
-const pointsSum = (): number => points.reduce((curr, next) => curr + next, 0);
+const pointsSum = points.reduce((curr, next) => curr + next, 0);
 
-console.log(pointsSum());
+console.log(pointsSum);
