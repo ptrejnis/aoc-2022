@@ -2,6 +2,7 @@
   "name": "aoc-2022",
   "description": "Advent of code 2022",
   "scripts": {
+    "serve": "deno run $file_path --watch --allow-read",
     "lint": "eslint src/**/*.ts"
   },
   "devDependencies": {
